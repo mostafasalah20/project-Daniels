@@ -1,0 +1,476 @@
+:root {
+    --main-color: #e65f78;
+    --white-color: #fff;
+    --black-color: #000;
+    --btn-color: #eee;
+    --bg-light: #f8f9fa;
+    --blog-color: rgb(108, 107, 107);
+    --bg-section: #f5f5f5;
+
+  }
+  * {
+    text-transform: capitalize;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif
+  }
+
+  /* header .navbar-scroll{
+    background-color: #1c1b1b88;
+} */
+
+
+
+  /* start home */
+  .navbar-brand{
+    color: #fff;
+  }
+  .navbar-nav .nav-link.active{
+    color: #fff;
+  }
+  .nav-link {
+    position: relative;
+    margin: 0 5px;
+    color: #fff;
+  }
+  .nav-link::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    color: red;
+  }
+  .nav-link:hover::after{
+    width: 100%;
+    color: #fff;
+  }
+  .nav-link:hover {
+    color: #fff;
+  }
+
+  header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.523)),url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    .container .icons{
+        div{
+            display: grid;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+           
+            i{
+                margin: auto;
+                cursor: pointer
+            }
+        }
+    }
+
+}
+
+
+  header .container p::after {
+    content: "";
+    animation: Typing 15s linear infinite;
+  }
+  @keyframes Typing {
+    0% {content:'|';}
+    1% {content:'r|';}
+    2% {content:'ra|';}
+    3% {content:'ral|';}
+    4% {content:'ral|';}
+    5% {content:'rall|';}
+    6% {content:'rally D|';}
+    7% {content:'rally Da|';}
+    8% {content:'rally Dan|';}
+    9% {content:'rally Dani|';}
+    10% {content:'rally Danie|';}
+    11% {content:'rally Daniels|';}
+    12% {content:'rally Daniel|';}
+    13% {content:'rally dani|';}      
+    14% {content:'rally den|';}
+    15% {content:'rally da|';}
+    16% {content:'rally d|';}
+    17% {content:'rally|';}
+    18% {content:'rall|';}
+    19% {content:'ral|';}
+    20% {content:'ra|';}
+    21% {content:'Si|';}
+    22% {content:'S|';}
+    23% {content:'F|';}
+    24% {content:'Fr|';}
+    25% {content:'Fre|';}
+    26% {content:'Free|';}
+    27% {content:'Freel|';}
+    28% {content:'Freela|';}
+    29% {content:'Freelan|';}
+    30% {content:'Freelanc|';}
+    31% {content:'Freelance|';}
+    32% {content:'Freelancer|';}
+    33% {content:'Freelance|';}
+    34% {content:'Freelanc|';}
+    35% {content:'Freelan|';}
+    36% {content:'Freela|';}
+    37% {content:'Freel|';}
+    38% {content:'Free|';}
+    39% {content:'Fre|';}
+    40% {content:'Fr|';}
+    41% {content:'F|';}
+    42% {content:'P|';}
+    43% {content:'Po|';}
+    44% {content:'Pho|';}
+    45% {content:'Phot|';}
+    46% {content:'Photo|';}
+    47% {content:'Photog|';}
+    48% {content:'Photogh|';}
+    49% {content:'Photoghr|';}
+    50% {content:'Photoghra|';}
+    51% {content:'Photoghrap|';}
+    52% {content:'Photoghrape|';}
+    53% {content:'Photoghraper|';}
+    54% {content:'Photoghrape|';}
+    60% {content:'Photoghrap|';}
+    62% {content:'Photoghra|';}
+    64% {content:'Photoghr|';}
+    66% {content:'Photogh|';}
+    68% {content:'Photog|';}
+    70% {content:'Photo|';}
+    72% {content:'Phot|';}
+    74% {content:'Pho|';}
+    76% {content:'Ph|';}
+    78% {content:'P|';}
+    80% {content:'D|';}
+    84% {content:'De|';}
+    86% {content:'Des|';}
+    88% {content:'Desi|';}
+    90% {content:'Desig|';}
+    91% {content:'Design|';}
+    92% {content:'Designe|';}
+    93% {content:'Designer|';}
+    94% {content:'Designe|';}
+    95% {content:'Design|';}
+    96% {content:'Desig|';}
+    97% {content:'Desi|';}
+    98% {content:'Des|';}
+    99% {content:'De|';}
+    100% {content:'D|';}
+}
+
+/*-------------------- end home----------------- */
+/*-------------------- start about----------------- */
+
+#about .row .col-md-5 .hero{
+  position: relative;
+}
+#about .row .col-md-5 .hero::after{
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: -26px;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+#about .row .col-md-7 .btu .frist-btu{
+  background-color: #000;
+  color: #fff;
+}
+#about .row .col-md-7 .btu .frist-btu:hover{
+  background-color: #fff;
+    color: #000;
+}
+
+/*-------------------- end about----------------- */
+/*------------------- start services-------------- */
+#services{
+  background-color: #0000000a;
+}
+#services .container .row .col-md-12 h3{
+  position: relative;
+  font-weight: 900;
+  display: inline-block;
+  z-index: -1;
+}
+#services .container .row .col-md-12 h3::after{
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  z-index: -1;
+  margin: auto;
+}
+#services .container .row .col-md-4 .card .icons{
+  width: 60px;
+  height: 60px;
+  background-color: #26252519;
+  display: grid;
+  border-radius: 50%;
+}
+#services .container .row .col-md-4 .card:hover .icons{
+  background-color: #1c1b1b;
+  color: #fff;
+}
+
+/* ---------------------start portfoli------------------------- */
+
+
+#portfolio .container .row .col-md-12 h3{
+  position: relative;
+  font-weight: 700;
+  display: inline-block;
+  z-index:-1;
+}
+#portfolio .container .row .col-md-12 h3::after{
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  right: 0%;
+  z-index: -1;
+  margin: auto;
+}
+#portfolio .container .row .col-md-4 .image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#portfolio .container .row .col-md-4 .image .text-icon{
+  background-color: #fff;
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.0;
+  transition: all 0.5s;
+
+}
+#portfolio .container .row .col-md-4 .image .text-icon .text{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#portfolio .container .row .col-md-4 .image .text-icon .text p{
+  position: absolute;
+  top: 20%;
+  transition: all 0.5s;
+
+}
+#portfolio .container .row .col-md-4 .image .text-icon  .icon{
+  position: absolute;
+  bottom:20%;
+  transition: all 0.5s;
+  display: flex;
+}
+
+#portfolio .container .row .col-md-4 .image .text-icon:hover{
+  transform: scale(1.1);
+  opacity: 1;
+
+}
+
+#portfolio .container .row .col-md-4 .image .text-icon:hover p{
+  top: 40%;
+}
+#portfolio .container .row .col-md-4 .image .text-icon:hover  .icon{
+  bottom: 33%;
+}
+
+#portfolio .container .row .col-md-4 .image .text-icon  .icon div {
+  width: 30px;
+  height: 30px;
+  background-color: #1c1b1b;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+/* --------------------------end portfolio-------------------------------*/
+/* --------------------------start Testimonials-------------------------------*/
+#Testimonials{
+  background-color: #46434318;
+}
+#Testimonials .container .row .col-md-12 h3{
+  position: relative;
+  font-weight: 700;
+  display: inline-block;
+  z-index: 3;
+}
+#Testimonials .container .row .col-md-12 h3::after{
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  right: 0%;
+  z-index: -1;
+  margin: auto;
+}
+
+.carousel-indicators [data-bs-target]{
+  text-indent: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1c1b1b;
+}
+/* --------------------------end Testimonials-------------------------------*/
+
+/* --------------------------start out-team section-------------------------------*/
+
+#team .container .row .col-md-12 h3{
+  position: relative;
+  font-weight: 700;
+  display: inline-block;
+  z-index: -1;
+}
+#team .container .row .col-md-12 h3::after{
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  right: 0%;
+  z-index: -1;
+  margin: auto;
+}
+
+
+#team .container .row .col-sm-12 .cont .image .icons div{
+  width: 40px;
+  height: 40px;
+  background-color: #1c1b1b;
+  border-radius: 50%;
+  color: #fff;
+}
+
+#team .container .row .col-sm-12 .cont .image{
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+#team .container .row .col-sm-12 .cont .image .icons{
+  background-color: #1c1b1b88;
+  position: absolute;
+  top: 13px;
+  width: 92%;
+  height: 95%;
+  opacity: 0.0;
+  transition: all 0.5s;
+  .d-grid{
+    cursor: pointer;
+   border: #000 solid 1px;
+  }
+}
+
+#team .container .row .col-sm-12 .cont .image .icons .d-grid:hover{
+  background-color: #fff;
+  color: #000;
+}
+#team .container .row .col-sm-12 .cont:hover .icons{
+  background-color: #fff;
+  transform: rotateY(360deg) scale(1, 1);
+  opacity: 1;
+}
+#team .container .row .col-sm-12 .cont:hover  .image img{
+  transform: scale(1.2);
+
+}
+#team .container .row .col-sm-12 .cont .image img{
+  transition: all 0.5s;
+}
+/* --------------------------end out-team section-------------------------------*/
+/* --------------------------start Contact Us. section-------------------------------*/
+#contact .container .row .col-md-12 h3{
+  position: relative;
+  font-weight: 700;
+  display: inline-block;
+  z-index: -1;
+}
+#contact .container .row .col-md-12 h3::after{
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  right: 0%;
+  z-index: -1;
+  margin: auto;
+}
+#contact i {
+  background-color: #f4f4f4;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+#contact .container .row .col-md-4 .contact-icon:hover i{
+  background-color: black;
+  color: white;
+}
+
+#contact .form-control {
+  background-color: #f4f4f4;
+  border: 0;
+  border-color: unset;
+  box-shadow: none;
+}
+#contact textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+}
+#contact .btn {
+  width: 15%;
+  transition: all 0.3s ease-in-out;
+}
+#contact .btn:hover {
+  background-color: white;
+  color: black !important;
+  border: 1px solid black;
+}
+/* ---------------------------------end-Contact Us. section------------------- */
+
+
+
+
